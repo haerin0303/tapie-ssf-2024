@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fastly.jsdelivr.net/npm/galmuri@latest/dist/galmuri.css');
+
+body {
+  /* 마진을 0으로 만들고 백그라운드 컬러를 블랙으로 만듬니다. */
+}
+
+h1 {
+  font-family: 'Galmuri11', cursive;
+  color: white;
+}
+
+.App {
+  display: flex;
+}
+
+
+.gameInfo {
+  /* width를 100%로 만듬니다.*/
+}
+
+.gameInfoMain {
+  display: flex;
+}
+
+.gameInfo img {
+  width: 20%;
+  height: 20%;
+}
+
+.endScreenDefeat {
+  width: 100vw;
+  height: 100vh;
+  /*디스플레이를 none으로 만들고, 아이템을 맨 가운데에 오도록 flex설정을 합니다.*/
+}
+
+.endScreenVictory {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.endScreen > h1 {
+  /*컬러를 하얀색으로 바꾸고 50px로 크기를 설정합니다.*/
+}
+
+.upgradeSelect > h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+  cursor: pointer;
+
+  transition: color 0.2s;
+}
+
+.upgradeSelect > h1:hover {
+  /*색깔을 빨간색으로 바꿉니다.*/
+}
+
+.upgradeSelect > h1:active {
+  color: green;
+}
+
+h1 {
+  font-size: 15px;
+}
+
+@media only screen and (min-width: 1440px) {
+  h1 {
+    font-size: 25px;
+  }
+}
